@@ -44,7 +44,9 @@ android {
 kotlin {
     compilerOptions {
         freeCompilerArgs.addAll(
-            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api"
+            listOf(
+                "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+                "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi")
         )
     }
 }
